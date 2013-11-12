@@ -86,8 +86,8 @@ nav li.subscribe a:hover {background-color:transparent;}
 #top-promos li:last-child {margin:0;}
 #top-promos li a {display:block;overflow:hidden;width:225px;height:80px;background-color:#f3f5fd;}
 #top-promos li a img {float:left;display:inline-block;margin-right:8px;}
-#top-promos li a p {margin-top:8px;color:#6e6e6e;font-size:12px;text-transform:uppercase;}
-#top-promos li a h2 {margin:0 8px 8px 8px;font-size:14px;line-height:17px;font-weight:600;}
+#top-promos li a p {margin-top:4px;color:#6e6e6e;font-size:12px;text-transform:uppercase;}
+#top-promos li a h2 {margin:0 8px 8px 8px;font-size:14px;line-height:15px;font-weight:600;}
 #top-promos li a:hover {color:#000000;background-color:#dce1ee;
 	-webkit-transition: background-color 0.2s ease;
 	-moz-transition: background-color 0.2s ease;
