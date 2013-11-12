@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange County Register</title>
+
+  <link href="styles.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+<div id="page-wrapper">
+	<div id="top-ad"><img src="http://placehold.it/728x90" /></div>
+	<div id="top-links">
+		<ul>
+			<li><a href="#">Register Connect</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Customer Service</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">eRegister</a></li>
+			<li><a href="#">Subscribe today</a></li>
+		</ul>
+	</div>
+	<div id="nav-anchor"></div>
+	<nav id="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">Entertainment</a></li>
+			<li><a href="#">Life</a></li>
+			<li><a href="#">Travel</a></li>
+			<li><a href="#">Opinion</a></li>
+			<li><a href="#">Food</a></li>
+			<li><a href="#">Today's paper</a></li>
+			<li class="search"><a href="#"></a></li>
+			<li class="user"><a href="#"></a></li>
+			<li class="subscribe"><a href="#">Subscribe</a></li>
+		</ul>
+	</nav>
+	<div id="header">
+		<div id="header-img"></div>
+		<a class="ocr-flag" href="#"></a>
+		<div class="tab cars"><a href="#" class="white">cars</a></div>
+		<div class="tab jobs"><a href="#" class="white">jobs</a></div>
+		<div class="tab homes"><a href="#" class="white">homes</a></div>
+		<div id="subnav-anchor"></div>
+	</div><!-- end #header -->
+
+	<div id="dont-miss-bar">
+		<ul>
+			<li><a href="#" class="black">Don't miss:</a></li>
+			<li><a href="#">Topic No. 1</a></li>
+			<li><a href="#">Topic No. 2</a></li>
+			<li><a href="#">Topic No. 3</a></li>
+			<li><a href="#">Topic No. 4</a></li>
+			<li class="weather"><a href="#">68&deg;</a></li>
+		</ul>
+	</div>
+
+
+	<div id="content-wrapper">
+		<div id="left-column">
+			<div class="box">
+				<div id="lead-rail">
+					<div class="headline-wrapper">
+						<h2><a href="#">Student scores among lowest in the nation</a></h2>
+						<p class="posted">Posted 3 minutes ago</p>
+						<p class="tease">The tease for this story right here. The tease for this story right here. The tease for this story. The tease for this lead story.</p>
+					</div>
+					<div class="headline-wrapper">
+						<h3><a href="#">UCLA: Alford's past paints blurry portrait</a></h3>
+						<p class="posted">Posted 32 minutes ago</p>
+					</div>
+					<div class="headline-wrapper">
+						<h3><a href="#">Still warm, but cooler weather is coming</a></h3>
+						<p class="posted">Posted 50 minutes ago</p>
+					</div>
+					<div class="headline-wrapper">
+						<h3><a href="#">'Vaping' industry faces cloud of uncertainty</a></h3>
+						<p class="posted">Posted at 11:15 a.m.</p>
+					</div>
+				</div>
+				<div id="lead-story">
+					<a href="file:///Users/chrismlusk/Sites/ocr/story.html">
+						<img src="http://placehold.it/400x300" />
+						<h1>Lead story on the website right now</h1>
+					</a>
+					<p class="posted">Posted at 9:30 a.m.</p>
+					<p class="tease">The tease for this story right here. The tease for this story right here. The tease for this story. The tease for this lead story. The tease for this story. The tease for this lead story.</p>
+				</div>
+			</div>
+		</div>
+		<div id="right-column">
+			<div class="box">
+				<div class="ad-title">Advertisement</div>
+				<img src="http://placehold.it/300x250" />
+			</div>
+			<div class="box">
+				test
+			</div>
+		</div>
+	</div><!-- end #content-wrapper -->
+</div><!-- end #page-wrapper -->
+
+
+<!-- STICKY NAV BAR -->
+<script>
+    $(document).ready(function() {
+        var $window = $(window),
+            $nav = $('#nav'),
+            $navAnchor = $('#nav-anchor'),
+            $mainContent = $('#content-wrapper'),
+            $subnav = $('#dont-miss-bar'),
+            $subnavAnchor = $('#subnav-anchor');
+
+        // Run this on scroll events
+        $window.scroll(function() {
+            var window_top = $window.scrollTop();
+            var nav_top = $navAnchor.offset().top;
+            var subnav_top = $subnavAnchor.offset().top;
+            if (window_top > nav_top) {
+                // Make the div sticky.
+                $nav.addClass('stick-top');
+                $navAnchor.height($nav.height());
+            }
+            else {
+                $nav.removeClass('stick-top');
+                $navAnchor.height(0);
+            }
+            if (nav_bottom >= subnav_top) {
+            	// Make the div sticky.
+            	$subnav.addClass('stick');
+            	$subnavAnchor.height($subnav.height());
+            }
+            else {
+            	$subnav.removeClass('stick');
+            	$subnavAnchor.height(0);
+            }
+        });
+    });
+  </script><!-- sticky nav bar -->
+
+</body>
+</html>
