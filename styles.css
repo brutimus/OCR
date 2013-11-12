@@ -15,7 +15,7 @@ ul {list-style:none outside none;}
   width: 940px;
   top: 0;
 }
-.stick {position:fixed;top:22px;}
+.stick {position:fixed !important;top:36px;}
 .box {overflow:auto;margin-bottom:10px;padding:10px;background-color:#ffffff;}
 .box-nopad {overflow:auto;margin-bottom:10px;background-color:#ffffff;}
 .box-title {padding:5px 20px;background-color:#536aaa;}
@@ -39,7 +39,27 @@ nav li {float:left;display:inline-block;font-size:15px;font-weight:600;}
 nav li a {display:block;padding:8px 13px;color:#ffffff;background-color:#536AAA;border-right:1px solid #4D629D;}
 nav li a:hover {color:#ffffff;background-color:#5972B7;}
 nav li a:active {color:#536AAA;background-color:#d5d5d5;}
-nav li.search, nav li.user {background: #536AAA url('ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D;}
+nav li.search, nav li.user {background: #536AAA url('ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D; position: relative;}
+nav li.search a {
+	float: left;
+}
+nav li.search .search-wrapper {
+	display: block;
+	float: left;
+	height: 100%;
+	background-color: #536AAA;
+	position: absolute;
+	left: 34px;
+	z-index: 100;
+	width: 125px;
+	overflow: hidden;
+	display: none;
+}
+nav li.search .search-wrapper input {
+	height: 20px;
+	margin-top: 6px;
+	width: 100%;
+}
 nav li.user {background:#536AAA url('ico-user.png') no-repeat center center;}
 nav li.search a, nav li.user a {display:block;width:34px;height:36px;padding:0;background-color:transparent;}
 nav li.search a:hover {background:#5972B7 url('ico-search.png') no-repeat center center;}

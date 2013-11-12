@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="page-wrapper">
-	<div id="top-ad"><img src="http://placehold.it/728x90" /></div>
+	<div id="top-ad"><img src="ad-top.png" /></div>
 	<div id="top-links">
 		<ul>
 			<li><a href="#">Register Connect</a></li>
@@ -20,7 +20,7 @@
 			<li><a href="#">Customer Service</a></li>
 			<li class="h-divider"></li>
 			<li><a href="#">eRegister</a></li>
-			<!--<li><a href="#">Subscribe today</a></li>-->
+			<li><a href="#">Subscribe today</a></li>
 		</ul>
 	</div>
 	<div id="nav-anchor"></div>
@@ -36,7 +36,7 @@
 			<li><a href="#">Opinion</a></li>
 			<li><a href="#">Food</a></li>
 			<li><a href="#">Today's paper</a></li>
-			<li class="search"><a href="#"></a></li>
+			<li class="search"><a href=""></a><div class="search-wrapper"><input type="text" /></div></li>
 			<li class="user"><a href="#"></a></li>
 			<li class="subscribe"><a href="#">Subscribe</a></li>
 		</ul>
@@ -47,20 +47,19 @@
 		<div class="tab cars"><a href="#" class="white">cars</a></div>
 		<div class="tab jobs"><a href="#" class="white">jobs</a></div>
 		<div class="tab homes"><a href="#" class="white">homes</a></div>
-		<div id="subnav-anchor"></div>
-		<div id="dont-miss-bar">
-			<ul>
-				<li>Orange Buzz:</li>
-				<li><a href="#">Topic No. 1</a></li>
-				<li><a href="#">Topic No. 2</a></li>
-				<li><a href="#">Topic No. 3</a></li>
-				<li><a href="#">Topic No. 4</a></li>
-				<li><a href="#">Topic No. 5</a></li>
-				<li><a href="#">traffic</a></li>
-				<li><a href="#">weather</a></li>
-			</ul>
-		</div>
 	</div><!-- end #header -->
+
+	<div id="subnav-anchor"></div>
+	<div id="dont-miss-bar">
+		<ul>
+			<li><a href="#" class="black">Don't miss:</a></li>
+			<li><a href="#">Topic No. 1</a></li>
+			<li><a href="#">Topic No. 2</a></li>
+			<li><a href="#">Topic No. 3</a></li>
+			<li><a href="#">Topic No. 4</a></li>
+			<li class="weather"><a href="#">68&deg;</a></li>
+		</ul>
+	</div>
 
 	<div class="box-nopad">
 		<div id="top-promos">
@@ -323,6 +322,7 @@
         $window.scroll(function() {
             var window_top = $window.scrollTop();
             var nav_top = $navAnchor.offset().top;
+            var nav_height = $navAnchor.height();
             var subnav_top = $subnavAnchor.offset().top;
             if (window_top > nav_top) {
                 // Make the div sticky.
@@ -333,7 +333,7 @@
                 $nav.removeClass('stick-top');
                 $navAnchor.height(0);
             }
-            if (nav_bottom >= subnav_top) {
+            if ((window_top + nav_height) >= subnav_top) {
             	// Make the div sticky.
             	$subnav.addClass('stick');
             	$subnavAnchor.height($subnav.height());
@@ -342,6 +342,10 @@
             	$subnav.removeClass('stick');
             	$subnavAnchor.height(0);
             }
+        });
+        $('.search').click(function(event) {
+        	event.preventDefault();
+        	$('.search-wrapper').toggle({'width':'toggle', 'height': null})
         });
     });
   </script><!-- sticky nav bar -->
