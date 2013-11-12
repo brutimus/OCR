@@ -347,6 +347,14 @@
         	event.preventDefault();
         	$('.search-wrapper').toggle({'width':'toggle', 'height': null})
         });
+        $.ajax({
+	 		url : "http://api.wunderground.com/api/51d77a52788b3c2a/conditions/q/CA/Santa_Ana.json",
+		    dataType : "jsonp",
+	        success : function(data) {
+	  			var temp_f = data['current_observation']['temp_f'];
+	  			$('.weather').find('a').html(Math.round(temp_f) + '&deg;');
+	  		}
+	  	});
     });
   </script><!-- sticky nav bar -->
 
