@@ -178,13 +178,18 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 /* MOST POPULAR */
 ol.most-popular {background-color:#f3f5fd;}
 ol.most-popular li {border:1px solid #dce1ee;border-bottom:none;}
+ol.most-popular li a {overflow:auto;display:block;padding:10px 0 10px 10px;}
 ol.most-popular li:last-child {border-bottom:1px solid #dce1ee;}
-ol.most-popular li a {overflow:auto;display:block;padding:20px;}
 ol.most-popular li a img {float:left;margin:0 8px 0 0;}
 ol.most-popular li a p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
-ol.most-popular li a h3 {font-size:16px;line-height:17px;}
-ol.most-popular li a.lead {}
-ol.most-popular li a.lead img {display:block;margin:0 0 5px 0;}
+ol.most-popular li a h3 {font-size: 15px;
+line-height: 17px;
+font-weight: 400;
+letter-spacing: 0.5px;}
+ol.most-popular li a.lead {padding:2px 0 15px 0;}
+ol.most-popular li a.lead p {margin: 0 0 5px 8px;}
+ol.most-popular li a.lead h3 {margin: 0 10px;}
+ol.most-popular li a.lead img {display:block;margin:0 0 10px 0;}
 ol.most-popular li a:hover > h3 {color:#000000;}
 ol.most-popular li:hover {background-color:#dce1ee;
 	-webkit-transition: background-color 0.2s ease;
