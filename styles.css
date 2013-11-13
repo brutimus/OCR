@@ -105,13 +105,13 @@ nav li.subscribe a:hover {background-color:transparent;}
 	background-color: #F8F8F8;
 	box-shadow: 0 5px 15px -11px inset;
 }
-#top-promos li {display:inline-block;border-right: 1px dotted #D5D5D5;}
+#top-promos li {display:inline-block;border-right: 1px dotted #D5D5D5;float:left;}
 #top-promos li:last-child {margin:0;border:none;}
-#top-promos li a {display:block;width: 222px;height: 75px;padding:10px 5px;}
+#top-promos li a {display:block;width: 224px;height: 75px;padding:10px 5px;}
 #top-promos li a img {float:left;display:inline-block;margin-right:8px;}
 #top-promos li a p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
 #top-promos li a h2 {margin:0 8px 8px 8px;font-size:14px;line-height:15px;font-weight:600;}
-#top-promos li a:hover {color:#000000;}
+#top-promos li a:hover {color:#000000;background-color: #eeeeee;}
 
 #story-header {margin-bottom:10px;}
 #story-header .label p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
