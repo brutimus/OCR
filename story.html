@@ -7,7 +7,8 @@
 
   <link href="styles.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -370,7 +371,7 @@
         });
         $('.search').click(function(event) {
         	event.preventDefault();
-        	$('.search-wrapper').toggle({'width':'toggle', 'height': null})
+        	$('.search-wrapper').toggle('slide', {easing: 'easeOutExpo'});
         });
         $.ajax({
 	 		url : "http://api.wunderground.com/api/51d77a52788b3c2a/conditions/q/CA/Santa_Ana.json",

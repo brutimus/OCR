@@ -46,18 +46,21 @@ nav li.search .search-wrapper {
 	display: block;
 	float: left;
 	height: 100%;
-	background-color: #536AAA;
+	background-color: #334A8A;
 	position: absolute;
 	left: 34px;
 	z-index: 100;
-	width: 125px;
+	width: 135px;
 	overflow: hidden;
 	display: none;
 }
 nav li.search .search-wrapper input {
 	height: 20px;
 	margin-top: 6px;
-	width: 100%;
+	width: 115px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inherit;
 }
 nav li.user {background:#536AAA url('ico-user.png') no-repeat center center;}
 nav li.search a, nav li.user a {display:block;width:34px;height:36px;padding:0;background-color:transparent;}
@@ -197,7 +200,8 @@ ol.most-popular li:hover {background-color:#dce1ee;
 	-o-transition: background-color 0.2s ease;
 	transition: background-color 0.2s ease;
 }
-ol.most-popular li.photo-galleries a .img-wrap {background-color:#ffffff;box-shadow:1px 1px 5px #d5d5d5;cursor:pointer;overflow:auto;padding:3px;margin-bottom:6px;}
+ol.most-popular li.photo-galleries a {padding:5px;}
+ol.most-popular li.photo-galleries a .img-wrap {background-color:#ffffff;box-shadow:1px 1px 10px -4px;cursor:pointer;overflow:auto;padding:3px;margin-bottom:6px;}
 ol.most-popular li.photo-galleries a .img-wrap img {display:block;}
 ol.most-popular li.photo-galleries a h3 {font-size:14px;line-height:15px;}
 
