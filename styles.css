@@ -74,13 +74,13 @@ nav li.subscribe a:hover {background-color:transparent;}
 #header .jobs {top:65px;}
 #header .homes {top:105px;}
 
-#dont-miss-bar {position:relative;min-width:940px;height:31px;background-color:#d5d5d5;z-index:999;}
+#dont-miss-bar {position:relative;min-width:940px;height:31px;background-color:#eee;z-index:999;}
 #dont-miss-bar li {float:left;display:inline-block;font-size:13px;}
-#dont-miss-bar li a {display:block;padding:7px 14px;color:#000;background-color:#d5d5d5;}
+#dont-miss-bar li a {display:block;padding:7px 14px;color:#000;}
 #dont-miss-bar li a:hover {text-decoration:none;color:#536AAA;}
 #dont-miss-bar li.label {font-weight:900;padding-right:0;}
 #dont-miss-bar li.label a:hover {color:#000000;}
-#dont-miss-bar li.weather {float:right;background: #d5d5d5 url('ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
+#dont-miss-bar li.weather {float:right;background: url('ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
 #dont-miss-bar li.weather a {display:block;width:52px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
 
 #content-wrapper {clear:both;position:relative;overflow:auto;margin:15px 0;padding:10px;background-color:#d5d5d5;}
@@ -101,19 +101,17 @@ nav li.subscribe a:hover {background-color:transparent;}
 #right-column .box {padding:0;margin-bottom:20px;}
 
 /* STORY STYLES */
-#top-promos {padding:10px 0;margin:15px 0 10px 0;border-top:1px dotted #d5d5d5;border-bottom:1px dotted #d5d5d5;}
-#top-promos li {display:inline-block;margin:0 10px 0 0;}
-#top-promos li:last-child {margin:0;}
-#top-promos li a {display:block;overflow:hidden;width:225px;height:80px;background-color:#f3f5fd;}
-#top-promos li a img {float:left;display:inline-block;margin-right:8px;}
-#top-promos li a p {margin-top:4px;color:#6e6e6e;font-size:12px;text-transform:uppercase;}
-#top-promos li a h2 {margin:0 8px 8px 8px;font-size:14px;line-height:15px;font-weight:600;}
-#top-promos li a:hover {color:#000000;background-color:#dce1ee;
-	-webkit-transition: background-color 0.2s ease;
-	-moz-transition: background-color 0.2s ease;
-	-o-transition: background-color 0.2s ease;
-	transition: background-color 0.2s ease;
+#top-promos {padding:0;margin:0 0 10px 0;border-top:1px dotted #d5d5d5;border-bottom:1px dotted #d5d5d5;
+	background-color: #F8F8F8;
+	box-shadow: 0 5px 15px -11px inset;
 }
+#top-promos li {display:inline-block;border-right: 1px dotted #D5D5D5;}
+#top-promos li:last-child {margin:0;border:none;}
+#top-promos li a {display:block;width: 222px;height: 75px;padding:10px 5px;}
+#top-promos li a img {float:left;display:inline-block;margin-right:8px;}
+#top-promos li a p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
+#top-promos li a h2 {margin:0 8px 8px 8px;font-size:14px;line-height:15px;font-weight:600;}
+#top-promos li a:hover {color:#000000;}
 
 #story-header {margin-bottom:10px;}
 #story-header .label p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
