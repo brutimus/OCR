@@ -23,9 +23,9 @@ ul {list-style:none outside none;}
 
 
 /* MAIN STRUCTURE */
-#page-wrapper {margin:0 auto;padding:10px 10px 0;position:relative;width:940px;}
+#page-wrapper {margin:0 auto;padding:2px 10px 0;position:relative;width:940px;}
 
-#top-ad {margin-bottom:25px;text-align:center;}
+#top-ad {margin-bottom:10px;text-align:center;}
 #top-ad img {margin: 0 auto;}
 
 #top-links {margin-bottom:5px;font-size:12px;font-weight:600;}
