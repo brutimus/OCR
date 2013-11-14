@@ -31,13 +31,12 @@ ul {list-style:none outside none;}
 
 nav {position:relative;min-width:940px;height:36px;overflow:hidden;background-color:#536AAA;z-index:1000;}
 nav li {float:left;display:inline-block;font-size:15px;font-weight:600;}
-nav li a {display:block;padding:8px 13px;color:#ffffff;background-color:#536AAA;border-right:1px solid #4D629D;}
+nav li a {display:block;padding:8px 12px;color:#ffffff;background-color:#536AAA;border-right:1px solid #4D629D;}
 nav li a:hover {color:#ffffff;background-color:#5972B7;}
 nav li a:active {color:#536AAA;background-color:#eee;}
-nav li.search, nav li.user {background: #536AAA url('img/ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D; position: relative;}
-nav li.search a {
-	float: left;
-}
+nav li.search {background: #536AAA url('../img/ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D;position:relative;}
+nav li.search a {float:left;display:block;width:34px;height:36px;padding:0;background-color:transparent;}
+nav li.search a:hover {background:#5972B7 url('../img/ico-search.png') no-repeat center center;}
 nav li.search .search-wrapper {
 	display: block;
 	float: left;
@@ -46,7 +45,7 @@ nav li.search .search-wrapper {
 	position: absolute;
 	left: 34px;
 	z-index: 100;
-	width: 135px;
+	width: 155px;
 	overflow: hidden;
 	display: none;
 }
@@ -58,15 +57,14 @@ nav li.search .search-wrapper input {
 	margin-right: auto;
 	display: inherit;
 }
-nav li.search a {display:block;width:34px;height:36px;padding:0;background-color:transparent;}
-nav li.search a:hover {background:#5972B7 url('img/ico-search.png') no-repeat center center;}
+nav li.featured {float:right;}
 nav li.featured a {background-color:transparent;border:none;}
 nav li.featured a:hover {background-color:transparent;}
 
 #header {clear:both;position:relative;}
-#header .ocr-flag {background:url('img/flag-white.png') no-repeat;position:absolute;top:28px;left:20px;width:450px;height:100px;}
-#header-img {background:url('img/header.png') no-repeat;width:940px;height:160px;}
-#header .tab {position:absolute;top:0;right:-17px;background:url('img/tab-wrap.png') no-repeat;width:64px;height:39px;font-size:16px;line-height:30px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
+#header .ocr-flag {background:url('../img/flag-white.png') no-repeat;position:absolute;top:28px;left:20px;width:450px;height:100px;}
+#header-img {background:url('../img/header.png') no-repeat;width:940px;height:160px;}
+#header .tab {position:absolute;top:0;right:-17px;background:url('../img/tab-wrap.png') no-repeat;width:64px;height:39px;font-size:16px;line-height:30px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
 #header .cars {top:25px;}
 #header .jobs {top:65px;}
 #header .homes {top:105px;}
@@ -77,7 +75,7 @@ nav li.featured a:hover {background-color:transparent;}
 #dont-miss-bar li a:hover {text-decoration:none;color:#536AAA;}
 #dont-miss-bar li.label {font-weight:900;padding-right:0;}
 #dont-miss-bar li.label a:hover {color:#000000;}
-#dont-miss-bar li.weather {float:right;background: url('img/ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
+#dont-miss-bar li.weather {float:right;background: url('../img/ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
 #dont-miss-bar li.weather a {display:block;width:52px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
 
 #content-wrapper {clear:both;position:relative;overflow:auto;margin:15px 0;padding:10px;background-color:#d5d5d5;}
@@ -140,20 +138,20 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .share {margin-bottom:10px;}
 .share span.share-label {float:left;font-size:11px;font-weight:900;line-height:32px;margin-right:8px;text-transform:uppercase;}
 .share li {display:inline-block;}
-.social-link-fb {background:url('img/ico-fb.png') no-repeat center;width:28px;height:28px;}
-.social-link-fb:hover {background:url('img/ico-fb-active.png') no-repeat center;}
-.social-link-twitter {background:url('img/ico-twitter.png') no-repeat center;width:28px;height:28px;}
-.social-link-twitter:hover {background:url('img/ico-twitter-active.png') no-repeat center;}
-.social-link-gplus {background:url('img/ico-gplus.png') no-repeat center;width:28px;height:28px;}
-.social-link-gplus:hover {background:url('img/ico-gplus-active.png') no-repeat center;}
-.social-link-share {background:url('img/ico-share.png') no-repeat center;width:28px;height:28px;}
-.social-link-share:hover {background:url('img/ico-share-active.png') no-repeat center;}
-.social-link-comment {background:url('img/ico-comment.png') no-repeat center;width:28px;height:28px;}
-.social-link-comment:hover {background:url('img/ico-comment-active.png') no-repeat center;}
-.social-link-print {background:url('img/ico-print.png') no-repeat center;width:28px;height:28px;}
-.social-link-print:hover {background:url('img/ico-print-active.png') no-repeat center;}
-.social-link-mail {background:url('img/ico-mail.png') no-repeat center;width:28px;height:28px;}
-.social-link-mail:hover {background:url('img/ico-mail-active.png') no-repeat center;}
+.social-link-fb {background:url('../img/ico-fb.png') no-repeat center;width:28px;height:28px;}
+.social-link-fb:hover {background:url('../img/ico-fb-active.png') no-repeat center;}
+.social-link-twitter {background:url('../img/ico-twitter.png') no-repeat center;width:28px;height:28px;}
+.social-link-twitter:hover {background:url('../img/ico-twitter-active.png') no-repeat center;}
+.social-link-gplus {background:url('../img/ico-gplus.png') no-repeat center;width:28px;height:28px;}
+.social-link-gplus:hover {background:url('../img/ico-gplus-active.png') no-repeat center;}
+.social-link-share {background:url('../img/ico-share.png') no-repeat center;width:28px;height:28px;}
+.social-link-share:hover {background:url('../img/ico-share-active.png') no-repeat center;}
+.social-link-comment {background:url('../img/ico-comment.png') no-repeat center;width:28px;height:28px;}
+.social-link-comment:hover {background:url('../img/ico-comment-active.png') no-repeat center;}
+.social-link-print {background:url('../img/ico-print.png') no-repeat center;width:28px;height:28px;}
+.social-link-print:hover {background:url('../img/ico-print-active.png') no-repeat center;}
+.social-link-mail {background:url('../img/ico-mail.png') no-repeat center;width:28px;height:28px;}
+.social-link-mail:hover {background:url('../img/ico-mail-active.png') no-repeat center;}
 
 /* STORY LIST */
 #story-list {overflow:auto;margin-bottom:10px;}
