@@ -9,11 +9,7 @@ p.posted {font-size:11px;color:#6E6E6E;}
 p.tease {font-size:13px;line-height:17px;}
 img {display:block;max-width:100%;border:none;}
 ul {list-style:none outside none;}
-.stick-top {
-  position: fixed;
-  width: 940px;
-  top: 0;
-}
+.stick-top {position:fixed;width:940px;top:0;}
 .stick {position:fixed !important;top:36px;}
 .box {overflow:auto;margin-bottom:10px;padding:10px;background-color:#ffffff;}
 .box-nopad {overflow:auto;margin-bottom:10px;background-color:#ffffff;}
@@ -26,7 +22,7 @@ ul {list-style:none outside none;}
 #page-wrapper {margin:0 auto;padding:2px 10px 0;position:relative;width:940px;}
 
 #top-ad {margin-bottom:10px;text-align:center;}
-#top-ad img {margin: 0 auto;}
+#top-ad img {margin:0 auto;}
 
 #top-links {margin-bottom:5px;font-size:12px;font-weight:600;}
 #top-links li {display:inline-block;padding-right:8px;}
@@ -37,8 +33,8 @@ nav {position:relative;min-width:940px;height:36px;overflow:hidden;background-co
 nav li {float:left;display:inline-block;font-size:15px;font-weight:600;}
 nav li a {display:block;padding:8px 13px;color:#ffffff;background-color:#536AAA;border-right:1px solid #4D629D;}
 nav li a:hover {color:#ffffff;background-color:#5972B7;}
-nav li a:active {color:#536AAA;background-color:#d5d5d5;}
-nav li.search, nav li.user {background: #536AAA url('ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D; position: relative;}
+nav li a:active {color:#536AAA;background-color:#eee;}
+nav li.search, nav li.user {background: #536AAA url('img/ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D; position: relative;}
 nav li.search a {
 	float: left;
 }
@@ -62,17 +58,15 @@ nav li.search .search-wrapper input {
 	margin-right: auto;
 	display: inherit;
 }
-nav li.user {background:#536AAA url('ico-user.png') no-repeat center center;}
-nav li.search a, nav li.user a {display:block;width:34px;height:36px;padding:0;background-color:transparent;}
-nav li.search a:hover {background:#5972B7 url('ico-search.png') no-repeat center center;}
-nav li.user a:hover {background:#5972B7 url('ico-user.png') no-repeat center center;}
-nav li.subscribe a {background-color:transparent;border:none;}
-nav li.subscribe a:hover {background-color:transparent;}
+nav li.search a {display:block;width:34px;height:36px;padding:0;background-color:transparent;}
+nav li.search a:hover {background:#5972B7 url('img/ico-search.png') no-repeat center center;}
+nav li.featured a {background-color:transparent;border:none;}
+nav li.featured a:hover {background-color:transparent;}
 
 #header {clear:both;position:relative;}
-#header .ocr-flag {background:url('flag-white.png') no-repeat;position:absolute;top:28px;left:20px;width:450px;height:100px;}
-#header-img {background:url('header03.png') no-repeat;width:940px;height:160px;}
-#header .tab {position:absolute;top:0;right:-17px;background:url('tab-wrap.png') no-repeat;width:64px;height:39px;font-size:16px;line-height:30px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
+#header .ocr-flag {background:url('img/flag-white.png') no-repeat;position:absolute;top:28px;left:20px;width:450px;height:100px;}
+#header-img {background:url('img/header.png') no-repeat;width:940px;height:160px;}
+#header .tab {position:absolute;top:0;right:-17px;background:url('img/tab-wrap.png') no-repeat;width:64px;height:39px;font-size:16px;line-height:30px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
 #header .cars {top:25px;}
 #header .jobs {top:65px;}
 #header .homes {top:105px;}
@@ -83,7 +77,7 @@ nav li.subscribe a:hover {background-color:transparent;}
 #dont-miss-bar li a:hover {text-decoration:none;color:#536AAA;}
 #dont-miss-bar li.label {font-weight:900;padding-right:0;}
 #dont-miss-bar li.label a:hover {color:#000000;}
-#dont-miss-bar li.weather {float:right;background: url('ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
+#dont-miss-bar li.weather {float:right;background: url('img/ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
 #dont-miss-bar li.weather a {display:block;width:52px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
 
 #content-wrapper {clear:both;position:relative;overflow:auto;margin:15px 0;padding:10px;background-color:#d5d5d5;}
@@ -146,20 +140,20 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .share {margin-bottom:10px;}
 .share span.share-label {float:left;font-size:11px;font-weight:900;line-height:32px;margin-right:8px;text-transform:uppercase;}
 .share li {display:inline-block;}
-.social-link-fb {background:url('ico-fb.png') no-repeat center;width:28px;height:28px;}
-.social-link-fb:hover {background:url('ico-fb-active.png') no-repeat center;}
-.social-link-twitter {background:url('ico-twitter.png') no-repeat center;width:28px;height:28px;}
-.social-link-twitter:hover {background:url('ico-twitter-active.png') no-repeat center;}
-.social-link-gplus {background:url('ico-gplus.png') no-repeat center;width:28px;height:28px;}
-.social-link-gplus:hover {background:url('ico-gplus-active.png') no-repeat center;}
-.social-link-share {background:url('ico-share.png') no-repeat center;width:28px;height:28px;}
-.social-link-share:hover {background:url('ico-share-active.png') no-repeat center;}
-.social-link-comment {background:url('ico-comment.png') no-repeat center;width:28px;height:28px;}
-.social-link-comment:hover {background:url('ico-comment-active.png') no-repeat center;}
-.social-link-print {background:url('ico-print.png') no-repeat center;width:28px;height:28px;}
-.social-link-print:hover {background:url('ico-print-active.png') no-repeat center;}
-.social-link-mail {background:url('ico-mail.png') no-repeat center;width:28px;height:28px;}
-.social-link-mail:hover {background:url('ico-mail-active.png') no-repeat center;}
+.social-link-fb {background:url('img/ico-fb.png') no-repeat center;width:28px;height:28px;}
+.social-link-fb:hover {background:url('img/ico-fb-active.png') no-repeat center;}
+.social-link-twitter {background:url('img/ico-twitter.png') no-repeat center;width:28px;height:28px;}
+.social-link-twitter:hover {background:url('img/ico-twitter-active.png') no-repeat center;}
+.social-link-gplus {background:url('img/ico-gplus.png') no-repeat center;width:28px;height:28px;}
+.social-link-gplus:hover {background:url('img/ico-gplus-active.png') no-repeat center;}
+.social-link-share {background:url('img/ico-share.png') no-repeat center;width:28px;height:28px;}
+.social-link-share:hover {background:url('img/ico-share-active.png') no-repeat center;}
+.social-link-comment {background:url('img/ico-comment.png') no-repeat center;width:28px;height:28px;}
+.social-link-comment:hover {background:url('img/ico-comment-active.png') no-repeat center;}
+.social-link-print {background:url('img/ico-print.png') no-repeat center;width:28px;height:28px;}
+.social-link-print:hover {background:url('img/ico-print-active.png') no-repeat center;}
+.social-link-mail {background:url('img/ico-mail.png') no-repeat center;width:28px;height:28px;}
+.social-link-mail:hover {background:url('img/ico-mail-active.png') no-repeat center;}
 
 /* STORY LIST */
 #story-list {overflow:auto;margin-bottom:10px;}
@@ -185,10 +179,7 @@ ol.most-popular li a {overflow:auto;display:block;padding:10px 0 10px 10px;}
 ol.most-popular li:last-child {border-bottom:1px solid #dce1ee;}
 ol.most-popular li a img {float:left;margin:0 8px 0 0;}
 ol.most-popular li a p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
-ol.most-popular li a h3 {font-size: 15px;
-line-height: 17px;
-font-weight: 400;
-letter-spacing: 0.5px;}
+ol.most-popular li a h3 {font-size:14px;line-height:16px;font-weight:600;letter-spacing:0.5px;}
 ol.most-popular li a.lead {padding:2px 0 15px 0;}
 ol.most-popular li a.lead p {margin: 0 0 5px 8px;}
 ol.most-popular li a.lead h3 {margin: 0 10px;}
@@ -206,26 +197,6 @@ ol.most-popular li.photo-galleries a .img-wrap img {display:block;}
 ol.most-popular li.photo-galleries a h3 {font-size:14px;line-height:15px;}
 
 ol.most-popular li.homepage a h3 {font-size:14px;line-height:15px;}
-
-
-
-
-
-
-
-/* nav li a {display:block;text-decoration:none;color:#ffffff;
-	-webkit-transition: color 0.2s ease;
-	-moz-transition: color 0.2s ease;
-	-o-transition: color 0.2s ease;
-	transition: color 0.2s ease;
-} */
-
-
-
-
-
-
-
 
 
 
