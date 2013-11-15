@@ -105,7 +105,7 @@ nav li.featured a:hover {background-color:transparent;}
 span.byline {display:inline-block;font-size:13px;font-weight:700;margin-right:5px;}
 span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 
-.body-text {margin-bottom:20px;}
+.body-text {margin-bottom:30px;}
 .body-text p {font-size:17px;line-height:23px;margin-bottom:15px;}
 .body-text p > a {color:#536AAA;}
 .body-text p > a:hover {text-decoration:underline;}
@@ -143,8 +143,8 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .social-link-mail:hover {background:url('../img/ico-mail-active.png') no-repeat center;}
 
 /* STORY LIST */
-#story-list {overflow:auto;margin-bottom:10px;}
-#story-list .story {display:block;overflow:auto;padding-bottom:10px;margin-bottom:10px;border-bottom:1px dotted #d5d5d5;}
+#story-list {overflow:auto;margin-bottom:10px;padding-top:10px;border-top:1px solid #eeeeee;}
+#story-list .story {display:block;overflow:auto;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #eeeeee;}
 #story-list .story img {display:inline-block;float:left;margin-right:8px;}
 #story-list .story p.label {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
 #story-list .story h4 {font-size:18px;line-height:20px;margin-bottom:5px;}
