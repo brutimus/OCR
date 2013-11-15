@@ -88,10 +88,10 @@ nav li.featured a:hover {background-color:transparent;}
 #right-column .box {padding:0;margin-bottom:20px;}
 
 /* STORY STYLES */
-#top-promos {padding:0;margin:0 0 10px 0;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;background-color:#F8F8F8;box-shadow: 0 4px 15px -11px inset;}
+#top-promos {padding:0;margin:0 0 10px 0;border:1px solid #e5e5e5;background-color:#F8F8F8;box-shadow: 0 4px 15px -11px inset;}
 #top-promos li {display:inline-block;border-right:1px solid #e5e5e5;float:left;}
 #top-promos li:last-child {margin:0;border:none;}
-#top-promos li a {display:block;width:214px;height:80px;padding:10px;}
+#top-promos li a {display:block;width:213px;height:80px;padding:10px;}
 #top-promos li a img {float:left;display:inline-block;margin-right:8px;}
 #top-promos li a p {color:#6e6e6e;font-size:12px;text-transform:uppercase;}
 #top-promos li a h2 {font-size:13px;line-height:15px;font-weight:700;height:60px;overflow:hidden;}
@@ -160,10 +160,10 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 #join-the-convo p:last-child {margin-bottom:0;font-weight:600;}
 
 /* RIGHT RAIL BOXES */
-ol.right-rail {background-color:#f3f5fd;}
-ol.right-rail li {border:1px solid #dce1ee;border-bottom:none;}
+ol.right-rail {background-color:#f8f8f8;}
+ol.right-rail li {border:1px solid #eee;border-bottom:none;}
 ol.right-rail li a {overflow:auto;display:block;padding:10px 0 10px 10px;}
-ol.right-rail li:last-child {border-bottom:1px solid #dce1ee;}
+ol.right-rail li:last-child {border-bottom:1px solid #eee;}
 ol.right-rail li a img {float:left;margin:0 8px 0 0;}
 ol.right-rail li a p {margin-bottom:2px;color:#6e6e6e;font-size:12px;line-height:12px;text-transform:uppercase;}
 ol.right-rail li a h3 {font-size:14px;line-height:16px;font-weight:600;}
