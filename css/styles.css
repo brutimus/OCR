@@ -24,7 +24,7 @@ ul {list-style:none outside none;}
 #top-ad {margin-bottom:10px;text-align:center;}
 #top-ad img {margin:0 auto;}
 
-#top-links {margin-bottom:5px;font-size:12px;font-weight:600;}
+#top-links {margin-bottom:10px;font-size:12px;font-weight:600;}
 #top-links li {display:inline-block;padding-right:8px;}
 #top-links li a:hover {color:#536AAA;}
 #top-links li.h-divider:after {color:#d5d5d5;content:"|";}
@@ -37,26 +37,8 @@ nav li a:active {color:#536AAA;background-color:#eee;}
 nav li.search {background: #536AAA url('../img/ico-search.png') no-repeat center center;width:34px;height:36px;border-right:1px solid #4D629D;position:relative;}
 nav li.search a {float:left;display:block;width:34px;height:36px;padding:0;background-color:transparent;}
 nav li.search a:hover {background:#5972B7 url('../img/ico-search.png') no-repeat center center;}
-nav li.search .search-wrapper {
-	display: block;
-	float: left;
-	height: 100%;
-	background-color: #334A8A;
-	position: absolute;
-	left: 34px;
-	z-index: 100;
-	width: 145px;
-	overflow: hidden;
-	display: none;
-}
-nav li.search .search-wrapper input {
-	height: 20px;
-	margin-top: 6px;
-	width: 115px;
-	margin-left: auto;
-	margin-right: auto;
-	display: inherit;
-}
+nav li.search .search-wrapper {display:block;float:left;height:100%;background-color:#334A8A;position:absolute;left:34px;z-index:100;width:145px;overflow:hidden;display:none;}
+nav li.search .search-wrapper input {height:20px;margin-top:6px;width:115px;margin-left:auto;margin-right:auto;display:inherit;}
 nav li.featured {float:right;}
 nav li.featured a {background-color:transparent;border:none;}
 nav li.featured a:hover {background-color:transparent;}
@@ -75,9 +57,17 @@ nav li.featured a:hover {background-color:transparent;}
 #subnav li a:hover {text-decoration:none;color:#536AAA;}
 #subnav li.label {font-weight:900;padding-right:0;}
 #subnav li.label a:hover {color:#000000;}
+#subnav li.h-divider:after {color:#d5d5d5;content:"|";line-height:30px;}
+#subnav li.social {float:right;margin:5px 3px 0 0;}
+#subnav li.social a {display:block;width:22px;height:22px;}
+#subnav .social-link-fb {background:url('../img/ico-fb-active.png') no-repeat center;background-size:20px 20px;width:20px;height:20px;}
+#subnav .social-link-twitter {background:url('../img/ico-twitter-active.png') no-repeat center;background-size:20px 20px;width:20px;height:20px;}
+#subnav .social-link-gplus {background:url('../img/ico-gplus-active.png') no-repeat center;background-size:20px 20px;width:20px;height:20px;}
+
+
+
 #subnav li.weather {float:right;background: url('../img/ico-weather.png') no-repeat center left;width:52px;height:31px;padding-right:10px;}
 #subnav li.weather a {display:block;width:52px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
-#subnav li.h-divider:after {color:#d5d5d5;content:"|";line-height:30px;}
 
 
 #content-wrapper {clear:both;position:relative;overflow:auto;margin:15px 0;padding:10px;background-color:#d5d5d5;}
