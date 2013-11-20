@@ -49,9 +49,9 @@ nav li.featured a {background-color:transparent;border:none;}
 nav li.featured a:hover {background-color:transparent;}
 
 #header {clear:both;position:relative;}
-#header .ocr-flag {background:url('../img/flag-white.png') no-repeat;position:absolute;top:28px;left:20px;width:450px;height:100px;}
+#header .ocr-flag {background:url('../img/flag-white.png') no-repeat;background-size:contain;position:absolute;top:28px;left:20px;width:450px;height:100px;}
 #header-img {background:url('../img/header.png') no-repeat;width:940px;height:160px;}
-#header .tab {position:absolute;top:0;right:-17px;background:url('../assets/sprite-1x.png') no-repeat 0 -300px;width:58px;height:33px;font-size:14px;line-height:26px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
+#header .tab {position:absolute;top:0;right:-17px;background:url('../assets/sprite-1x.png') no-repeat;background-position:0 -300px;width:58px;height:33px;font-size:14px;line-height:26px;text-align:center;text-transform:uppercase;color:#ffffff;z-index:999;}
 #header .cars {top:15px;}
 #header .jobs {top:50px;}
 #header .homes {top:85px;}
@@ -66,9 +66,20 @@ nav li.featured a:hover {background-color:transparent;}
 #subnav li.h-divider:after {color:#d5d5d5;content:"|";line-height:30px;}
 #subnav li.social {float:right;margin:5px 3px 0 0;}
 #subnav li.social a {display:block;width:22px;height:22px;}
-#subnav .social-link-fb {background:url('../assets/sprite-1x.png') no-repeat 0 -180px;width:20px;height:20px;}
-#subnav .social-link-twitter {background:url('../assets/sprite-1x.png') no-repeat -240px -120px;width:20px;height:20px;}
-#subnav .social-link-gplus {background:url('../assets/sprite-1x.png') no-repeat -60px -180px;width:20px;height:20px;}
+#subnav .social {
+	background:url('../assets/sprite-1x.png') no-repeat;
+	width: 20px;
+	height: 20px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    #subnav .social {
+		background:url('../assets/sprite-2x.png') no-repeat;
+		background-size: 300px;
+	}
+}
+#subnav .social-link-fb {background-position: 0 -180px;}
+#subnav .social-link-twitter {background-position: -240px -120px;}
+#subnav .social-link-gplus {background-position: -60px -180px;}
 #subnav li.weather {float:right;background: url('../assets/sprite-1x.png') no-repeat -120px -175px;width:42px;height:31px;padding-right:10px;}
 #subnav li.weather a {display:block;width:42px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
 #subnav li.weather ul.weather-extended {position:absolute;left:-9999px;width:940px;border:1px solid #eee;background-color:#F8F8F8;box-shadow: 0 4px 15px -11px inset;
@@ -152,20 +163,25 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .share {margin-bottom:10px;}
 .share span.share-label {float:left;font-size:11px;font-weight:900;line-height:32px;margin-right:8px;text-transform:uppercase;}
 .share li {display:inline-block;}
-.social-link-fb {background:url('../assets/sprite-1x.png') no-repeat -60px 0;width:28px;height:28px;}
-.social-link-fb:hover {background:url('../assets/sprite-1x.png') no-repeat -180px -60px;width:28px;height:28px;}
-.social-link-twitter {background:url('../assets/sprite-1x.png') no-repeat 0 0;width:28px;height:28px;}
-.social-link-twitter:hover {background:url('../assets/sprite-1x.png') no-repeat -120px -60px;width:28px;height:28px;}
-.social-link-gplus {background:url('../assets/sprite-1x.png') no-repeat -120px 0;width:28px;height:28px;}
-.social-link-gplus:hover {background:url('../assets/sprite-1x.png') no-repeat -240px -60px;width:28px;height:28px;}
-.social-link-share {background:url('../assets/sprite-1x.png') no-repeat -180px 0;width:28px;height:28px;}
-.social-link-share:hover {background:url('../assets/sprite-1x.png') no-repeat 0 -120px;width:28px;height:28px;}
-.social-link-mail {background:url('../assets/sprite-1x.png') no-repeat -240px 0;width:28px;height:28px;}
-.social-link-mail:hover {background:url('../assets/sprite-1x.png') no-repeat -60px -120px;width:28px;height:28px;}
-.social-link-print {background:url('../assets/sprite-1x.png') no-repeat 0 -60px;width:28px;height:28px;}
-.social-link-print:hover {background:url('../assets/sprite-1x.png') no-repeat -120px -120px;width:28px;height:28px;}
-.social-link-comment {background:url('../assets/sprite-1x.png') no-repeat -60px -60px;width:28px;height:28px;}
-.social-link-comment:hover {background:url('../assets/sprite-1x.png') no-repeat -180px -120px;width:28px;height:28px;}
+.social {
+	background:url('../assets/sprite-1x.png') no-repeat;
+	background-size: contain;	
+}
+
+.social-link-fb {background-position:-60px 0;width:28px;height:28px;}
+.social-link-fb:hover {background-position: -180px -60px;width:28px;height:28px;}
+.social-link-twitter {background-position: 0 0;width:28px;height:28px;}
+.social-link-twitter:hover {background-position: -120px -60px;width:28px;height:28px;}
+.social-link-gplus {background-position: -120px 0;width:28px;height:28px;}
+.social-link-gplus:hover {background-position: -240px -60px;width:28px;height:28px;}
+.social-link-share {background-position: -180px 0;width:28px;height:28px;}
+.social-link-share:hover {background-position: 0 -120px;width:28px;height:28px;}
+.social-link-mail {background-position: -240px 0;width:28px;height:28px;}
+.social-link-mail:hover {background-position: -60px -120px;width:28px;height:28px;}
+.social-link-print {background-position: 0 -60px;width:28px;height:28px;}
+.social-link-print:hover {background-position: -120px -120px;width:28px;height:28px;}
+.social-link-comment {background-position: -60px -60px;width:28px;height:28px;}
+.social-link-comment:hover {background-position: no-repeat -180px -120px;width:28px;height:28px;}
 
 /* STORY LIST */
 #story-list {overflow:auto;margin-bottom:10px;padding:10px 10px 0 10px;background-color:#f8f8f8;border:1px solid #eee;}
@@ -214,4 +230,13 @@ ol.right-rail li.photo-galleries a h3 {font-size:14px;line-height:15px;}
 ol.right-rail li.homepage a h3 {font-size:13px;line-height:15px;font-weight:600;}
 
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	#header .ocr-flag {
+		background-image: url('../img/ocr-flag-white.svg');
+	}
+	#header .tab, #subnav li.weather, nav li.search, .social {
+		background-image:url('../assets/sprite-2x.png');
+		background-size: 300px;
+	}
 
+}
