@@ -42,8 +42,8 @@ nav li a:active, nav li a.active {color:#536AAA;background-color:#eee;}
 nav li.search {background: #536AAA url('../assets/sprite-1x.png') no-repeat -112px -230px;width:34px;height:36px;position:relative;}
 nav li.search a {float:left;width:34px;padding:0;background-color:transparent;}
 nav li.search a:hover {background:#5972B7 url('../assets/sprite-1x.png') no-repeat -112px -230px;}
-nav li.search .search-wrapper {display:block;float:left;height:100%;background-color:#334A8A;position:absolute;left:34px;z-index:100;width:145px;overflow:hidden;display:none;}
-nav li.search .search-wrapper input {height:20px;margin-top:6px;width:115px;margin-left:auto;margin-right:auto;display:inherit;}
+nav li.search .search-wrapper {display:block;float:left;height:100%;background-color:#334A8A;position:absolute;left:34px;z-index:100;width:220px;overflow:hidden;display:none;}
+nav li.search .search-wrapper input {height:20px;margin-top:6px;width:200px;margin-left:auto;margin-right:auto;display:inherit;}
 nav li.featured {float:right;}
 nav li.featured a {background-color:transparent;border:none;}
 nav li.featured a:hover {background-color:transparent;}
