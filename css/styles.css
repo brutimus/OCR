@@ -82,11 +82,14 @@ nav li.featured a:hover {background-color:transparent;}
 #subnav .social-link-gplus {background-position: -60px -180px;}
 #subnav li.weather {float:right;background: url('../assets/sprite-1x.png') no-repeat -120px -175px;width:42px;height:31px;padding-right:10px;}
 #subnav li.weather a {display:block;width:42px;height:31px;padding:0 10px 0 0;background-color:transparent;text-align:right;font-weight:800;line-height:30px;}
-#subnav li.weather ul.weather-extended {position:absolute;left:-9999px;width:940px;border:1px solid #eee;background-color:#F8F8F8;box-shadow: 0 4px 15px -11px inset;
+#subnav li.weather ul.weather-extended {position:absolute;left:0px;width:940px;height:0px;border:1px solid #eee;background-color:#F8F8F8;box-shadow: 0 4px 15px -11px inset;overflow: hidden;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
+	transition:height 500ms;
+	-webkit-transition:height 500ms;
+	-moz-transition:height 500ms;
 }
 #subnav li.weather ul.weather-extended li {padding:20px;width:312px;border-right:1px solid #eee;
 	-moz-box-sizing:border-box;
@@ -98,7 +101,7 @@ nav li.featured a:hover {background-color:transparent;}
 #subnav li.weather ul.weather-extended li h4 {float:none;font-size:24px;margin-bottom:20px;}
 #subnav li.weather ul.weather-extended li img {float:left;margin-right:8px;}
 #subnav li.weather ul.weather-extended li p {float:none;font-size:70px;font-weight:200;}
-#subnav li.weather:hover ul.weather-extended {left:0;}
+#subnav li.weather:hover ul.weather-extended {height:142px;}
 
 #content-wrapper {clear:both;position:relative;overflow:auto;margin:15px 0;padding:10px;background-color:#eeeeee;}
 
