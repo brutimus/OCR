@@ -168,7 +168,7 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .share li {display:inline-block;}
 .social {
 	background:url('../assets/sprite-1x.png') no-repeat;
-	background-size: contain;	
+	background-size:300px;	
 }
 
 .social-link-fb {background-position:-60px 0;width:28px;height:28px;}
@@ -184,7 +184,7 @@ span.time {display:inline-block;font-size:12px;font-style:italic;color:#6e6e6e;}
 .social-link-print {background-position: 0 -60px;width:28px;height:28px;}
 .social-link-print:hover {background-position: -120px -120px;width:28px;height:28px;}
 .social-link-comment {background-position: -60px -60px;width:28px;height:28px;}
-.social-link-comment:hover {background-position: no-repeat -180px -120px;width:28px;height:28px;}
+.social-link-comment:hover {background-position: -180px -120px;width:28px;height:28px;}
 
 /* STORY LIST */
 #story-list {overflow:auto;margin-bottom:10px;padding:10px 10px 0 10px;background-color:#f8f8f8;border:1px solid #eee;}

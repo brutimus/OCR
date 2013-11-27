@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange County Register | Story page</title>
+
+  <link href="css/styles.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+  <style>
+  	.gallery-wrapper {position:relative;padding:10px;border:1px solid #eee;}
+  	.option-bar {margin-bottom:5px;padding:3px 5px;color:#ffffff;background-color:#333333;
+  		font-size:12px;
+  	}
+  	.option-bar li {display:inline-block;padding:0 8px;}
+  	.option-bar li.close {float:left;margin-top:2px;background:url('assets/sprite-1x.png') no-repeat -60px -300px;width:12px;height:12px;padding-left:0;}
+  	.option-bar li.close:hover {background:url('assets/sprite-1x.png') no-repeat -120px -300px;}
+  	.option-bar li.counter {float:right;padding-right:0;}
+  	.controls {position:absolute;top:40%;padding-left:11px;width:565px;height:50px;z-index:1;}
+  	.controls .prev {float:left;background:url('assets/sprite-1x.png') no-repeat -239px -302px;width:51px;height:51px;}
+  	.controls .next {float:right;background:url('assets/sprite-1x.png') no-repeat -177px -302px;width:51px;height:51px;}
+  	.cutline {margin-top:5px;}
+  	.cutline p {font-size:14px;line-height:17px;}
+  	.cutline p.credit {margin-top:5px;font-size:12px;font-style:italic;color:#6e6e6e;}
+
+  </style>
+
+</head>
+<body>
+<div id="page-wrapper">
+	<div id="nav-anchor"></div>
+	<nav id="nav">
+		<ul>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Sports</a></li>
+			<li><a href="#">Business</a></li>
+			<li><a href="#">Entertainment</a></li>
+			<li><a href="#">Life</a></li>
+			<li><a href="#">Opinion</a></li>
+			<li><a href="#">Obits</a></li>
+			<li><a href="#">Today's paper</a></li>
+			<li class="search"><a href=""></a><div class="search-wrapper"><input type="text" /></div></li>
+			<li class="featured"><a href="#">Register Connect</a></li>
+		</ul>
+	</nav>
+	<div id="subnav-anchor"></div>
+	<div class="box-nopad">
+
+		<div style="margin-top:10px;" id="story-header">
+			<div class="label"><p>News</p></div>
+			<div class="headline"><h1>Headline for this photo gallery displays right here</h1></div>
+		</div><!-- end #story-header -->
+		<div id="left-column">
+			<div class="gallery-wrapper">
+				<div class="option-bar">
+					<ul>
+						<li class="close"></li>
+						<li>Buy Photo</li>
+						<li>Print Photo</li>
+						<li class="counter">1 of 898</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<div class="prev"></div>
+					<div class="next"></div>
+				</div>
+				<img class="slide" src="http://placehold.it/620x400">
+				<div class="cutline">
+					<p>Here's the photo cutline that displays underneath the photo in this gallery slideshow. Here's the photo cutline. Here's the photo cutline that displays underneath the photo in this gallery slideshow. The cutline is here, indeed. Here's the photo cutline for this image.</p>
+					<p class="credit">Photo: Chris Lusk, Orange County Register</p>
+				</div>
+			</div>
+		</div><!-- end #left-column -->
+
+		<div id="right-column">
+			<div class="box">
+				<div class="ad-title">Advertisement</div>
+				<img src="img/test/ad01.png" />
+			</div><!-- end advertisement -->
+
+			<!-- MOST POPULAR -->
+			<div class="box">
+				<ol class="right-rail">
+					<div class="box-title"><h6>Most popular</h6></div>
+					<li>
+						<a href="story.html" class="lead">
+							<p>Sports</p>
+							<img src="img/test/clippers.png" />
+							<h3>Griffin leads Clippers in rally to down the Rockets in Houston</h3>
+						</a>
+					</li>
+					<li>
+						<a href="story.html">
+							<p>News</p>
+							<h3>Authorities identify motorcyclist killed on Ortega Highway</h3>
+						</a>
+					</li>
+					<li>
+						<a href="story.html">
+							<img src="img/test/home.png" />
+							<p>Business</p>
+							<h3>Report: O.C. home prices up 21.5% over last year</h3>
+						</a>
+					</li>
+					<li>
+						<a href="story.html">
+							<img src="img/test/life.png" />
+							<p>Life</p>
+							<h3>Johnson: Did she mention that she loves to talk?</h3>
+						</a>
+					</li>
+					<li>
+						<a href="story.html">
+							<img src="img/test/usc.png" />
+							<p>Sports</p>
+							<h3>USC routs Cal, keeps winning in November</h3>
+						</a>
+					</li>
+				</ol>
+			</div><!-- end most popular -->
+
+		</div><!-- end #right-column -->
+	</div><!-- end box-nopad -->
+</div><!-- end #page-wrapper -->
+
+
+<script>
+    $(document).ready(function() {
+        var $window = $(window),
+            $nav = $('#nav'),
+            $navAnchor = $('#nav-anchor'),
+            $mainContent = $('#content-wrapper'),
+            $subnav = $('#subnav'),
+            $subnavAnchor = $('#subnav-anchor');
+
+        // Run this on scroll events
+        $window.scroll(function() {
+            var window_top = $window.scrollTop();
+            var nav_top = $navAnchor.offset().top;
+            var nav_height = $navAnchor.height();
+            var subnav_top = $subnavAnchor.offset().top;
+            if (window_top > nav_top) {
+                // Make the div sticky.
+                $nav.addClass('stick-top');
+                $navAnchor.height($nav.height());
+            }
+            else {
+                $nav.removeClass('stick-top');
+                $navAnchor.height(0);
+            }
+            if ((window_top + nav_height) >= subnav_top) {
+            	// Make the div sticky.
+            	$subnav.addClass('stick');
+            	$subnavAnchor.height($subnav.height());
+            }
+            else {
+            	$subnav.removeClass('stick');
+            	$subnavAnchor.height(0);
+            }
+        });
+        $('.search a').click(function(event) {
+        	event.preventDefault();
+        	$('.search-wrapper').toggle('slide', {easing: 'easeOutExpo'});
+        });
+        $.ajax({
+	 		url : "http://api.wunderground.com/api/51d77a52788b3c2a/conditions/q/CA/Santa_Ana.json",
+		    dataType : "jsonp",
+	        success : function(data) {
+	  			var temp_f = data['current_observation']['temp_f'];
+	  			$('.weather').find('a').html(Math.round(temp_f) + '&deg;');
+	  		}
+	  	});
+    });
+  </script>
+
+</body>
+</html>
