@@ -53,7 +53,7 @@
 	<div id="subnav-anchor"></div>
 	<div id="subnav">
 		<ul>
-			<li class="label"><a href="#">Orange Buzz:</a></li>
+			<li class="label"><a href="#">Must Read:</a></li>
 			<li><a href="story.html">'Catching Fire' even hotter</a></li>
 			<li><a href="story.html">Simers: Angels aren't leaving</a></li>
 			<li><a href="story.html">McDonald's: Have it your way</a></li>
@@ -62,68 +62,11 @@
 			<li class="social social-link-gplus" style="margin-right:10px;"><a href="#"></a></li>
 			<li class="social social-link-twitter"><a href="#"></a></li>
 			<li class="social social-link-fb"><a href="#"></a></li>
-			<li class="weather"><a href="#">--&deg;</a></li>
 		</ul>
 	</div>
 
-
-	<div id="content-wrapper">
-		<div id="left-column">
-			<div class="box">
-				<div id="lead-rail">
-					<div class="headline-wrapper">
-						<h2><a href="story.html">California gets surprise multi-billion surplus</a></h2>
-						<p class="posted">Posted 25 minutes ago</p>
-						<p class="tease">California’s financial outlook is rosier than it has been in years, with a report projecting the state will have a $2.4 billion reserve this fiscal year.</p>
-					</div>
-					<div class="headline-wrapper">
-						<h3><a href="story.html">Rain sweeps O.C.; winds on the way</a></h3>
-						<p class="posted">Posted 32 minutes ago</p>
-					</div>
-					<div class="headline-wrapper">
-						<h3><a href="story.html">'MythBusters' to bring crazy experiments to O.C. Saturday</a></h3>
-						<p class="posted">Posted 50 minutes ago</p>
-					</div>
-					<div class="headline-wrapper">
-						<h3><a href="story.html">Kobe Bryant's hunger game gets rave reviews from Pau Gasol</a></h3>
-						<p class="posted">Posted at 11:15 a.m.</p>
-					</div>
-				</div>
-				<div id="lead-story">
-					<a href="story.html">
-						<img src="img/test/lead.png" />
-						<h1>Man critical after hitting PCH power pole; power out for 210</h1>
-					</a>
-					<p class="posted">Posted at 9:30 a.m.</p>
-					<p class="tease">A man is in critical condition after he crashed into a power pole Thursday morning on Pacific Coast Highway, causing the road to temporarily be closed for repairs. The driver was taken to Mission Hospital in Mission Viejo, OCFA officials said.</p>
-				</div>
-			</div>
-		</div>
-		<div id="right-column">
-			<div class="box">
-				<div class="ad-title">Advertisement</div>
-				<img src="img/test/ad01.png" />
-			</div>
-
-			<!-- MOST POPULAR -->
-			<div class="box">
-				<ol class="right-rail">
-					<div class="box-title"><h6>Most popular</h6></div>
-					<li class="homepage"><a href="story.html"><h3>Griffin leads Clippers in rally to down the Rockets in Houston</h3></a></li>
-					<li><a href="story.html"><h3>Authorities identify motorcyclist killed on Ortega Highway</h3></a></li>
-					<li class="homepage"><a href="story.html"><h3>Report: O.C. home prices up 21.5% over last year</h3></a></li>
-					<li class="homepage"><a href="story.html"><h3>Johnson: Did she mention that she loves to talk?</h3></a></li>
-					<li class="homepage"><a href="story.html"><h3>USC routs Cal, keeps winning in November</h3></a></li>
-				</ol>
-			</div>
-
-			<div class="box">
-				<div class="ad-title">Advertisement</div>
-				<img src="img/test/ad04.png" />
-			</div><!-- end advertisement -->
-
-		</div>
-	</div><!-- end #content-wrapper -->
+	<!-- CONTENT GOES HERE -->
+	
 </div><!-- end #page-wrapper -->
 
 
@@ -166,14 +109,6 @@
         	event.preventDefault();
         	$('.search-wrapper').toggle('slide', {easing: 'easeOutExpo'});
         });
-	  	$.ajax({
-	 		url : "http://api.wunderground.com/api/51d77a52788b3c2a/conditions/q/CA/Santa_Ana.json",
-		    dataType : "jsonp",
-	        success : function(data) {
-	  			var temp_f = data['current_observation']['temp_f'];
-	  			$('.weather').find('a').html(Math.round(temp_f) + '&deg;');
-	  		}
-	  	});
     });
   </script><!-- sticky nav bar -->
 
