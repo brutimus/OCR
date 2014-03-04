@@ -26,7 +26,6 @@
 			<li><a href="#">eRegister</a></li>
 		</ul>
 	</div>
-	<div id="nav-anchor"></div>
 	<nav id="nav">
 		<ul>
 			<li><a href="#">News</a></li>
@@ -50,7 +49,6 @@
 		<div class="tab ads"><a href="#" class="white">ads</a></div>
 	</div><!-- end #header -->
 
-	<div id="subnav-anchor"></div>
 	<div id="subnav">
 		<ul>
 			<li class="label"><a href="#">Must Read:</a></li>
@@ -68,49 +66,5 @@
 	<!-- CONTENT GOES HERE -->
 	
 </div><!-- end #page-wrapper -->
-
-
-<!-- STICKY NAV BAR -->
-<script>
-    $(document).ready(function() {
-        var $window = $(window),
-            $nav = $('#nav'),
-            $navAnchor = $('#nav-anchor'),
-            $mainContent = $('#content-wrapper'),
-            $subnav = $('#subnav'),
-            $subnavAnchor = $('#subnav-anchor');
-
-        // Run this on scroll events
-        $window.scroll(function() {
-            var window_top = $window.scrollTop();
-            var nav_top = $navAnchor.offset().top;
-            var nav_height = $navAnchor.height();
-            var subnav_top = $subnavAnchor.offset().top;
-            if (window_top > nav_top) {
-                // Make the div sticky.
-                $nav.addClass('stick-top');
-                $navAnchor.height($nav.height());
-            }
-            else {
-                $nav.removeClass('stick-top');
-                $navAnchor.height(0);
-            }
-            if ((window_top + nav_height) >= subnav_top) {
-            	// Make the div sticky.
-            	$subnav.addClass('stick');
-            	$subnavAnchor.height($subnav.height());
-            }
-            else {
-            	$subnav.removeClass('stick');
-            	$subnavAnchor.height(0);
-            }
-        });
-        $('.search a').click(function(event) {
-        	event.preventDefault();
-        	$('.search-wrapper').toggle('slide', {easing: 'easeOutExpo'});
-        });
-    });
-  </script><!-- sticky nav bar -->
-
 </body>
 </html>
