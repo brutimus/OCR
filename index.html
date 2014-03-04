@@ -17,25 +17,22 @@
 	<!-- <div id="top-ad"><img src="img/test/ad-top.png" /></div> -->
 	<div id="top-links">
 		<ul>
-			<li><a href="#">TEST@EMAILADDRESS.COM</a></li>
+			<li><a href="#">Member Center / Welcome</a></li>
 			<li class="h-divider"></li>
-			<li><a href="#">Subscribe Today</a></li>
+			<li><a href="#">Newsletters</a></li>
 			<li class="h-divider"></li>
-			<li><a href="#">Customer Service</a></li>
-			<li class="h-divider"></li>
-			<li><a href="#">eRegister</a></li>
+			<li><a href="#">P-Edition Login</a></li>
 		</ul>
 	</div>
 	<nav id="nav">
 		<ul>
 			<li><a href="#">News</a></li>
 			<li><a href="#">Sports</a></li>
-			<li><a href="#">Business</a></li>
 			<li><a href="#">Entertainment</a></li>
-			<li><a href="#">Life</a></li>
-			<li><a href="#">Opinion</a></li>
+			<li><a href="#">Video</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">Blogs</a></li>
 			<li><a href="#">Obits</a></li>
-			<li><a href="#">Today's paper</a></li>
 			<li class="search"><a href=""></a><div class="search-wrapper"><input type="text" /></div></li>
 			<li class="featured"><a href="#">Register Connect</a></li>
 		</ul>
@@ -51,20 +48,34 @@
 
 	<div id="subnav">
 		<ul>
-			<li class="label"><a href="#">Must Read:</a></li>
-			<li><a href="story.html">'Catching Fire' even hotter</a></li>
-			<li><a href="story.html">Simers: Angels aren't leaving</a></li>
-			<li><a href="story.html">McDonald's: Have it your way</a></li>
-			<li><a href="story.html">5 best Vegas buffets</a></li>
+			<li><a href="#">Politics</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Business</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Crime Blotter</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Environment</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Education</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Opinion</a></li>
+			<li class="h-divider"></li>
+			<li><a href="#">Reports</a></li>
 
-			<li class="social social-link-gplus" style="margin-right:10px;"><a href="#"></a></li>
 			<li class="social social-link-twitter"><a href="#"></a></li>
 			<li class="social social-link-fb"><a href="#"></a></li>
 		</ul>
 	</div>
 
 	<!-- CONTENT GOES HERE -->
-	
+	<script>
+	    $(document).ready(function() {
+	        $('.search a').click(function(event) {
+	        	event.preventDefault();
+	        	$('.search-wrapper').toggle('slide', {easing: 'easeOutExpo'});
+	        });
+	    });
+	</script>
 </div><!-- end #page-wrapper -->
 </body>
 </html>
